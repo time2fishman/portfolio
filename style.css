@@ -1,32 +1,157 @@
+/*
+Colors Used
+
+Primary Background (Light Gray): #eff2f1
+Primary Link and Button (Blue): #0069b9
+Active link selection (dark blue): #004579
+Previously visited link (purple): #502846
+Button text: (white)
+Button border (dark blue): rgba(0, 0, 150, 0.9)
+Required form fields (deep red): #990000
+*/
+
 body {
-    background-color: #cedced;
-    text-align: center;
-    font-family: 'Roboto Mono';
+    font-family: 'Source Code Pro', monospace;
+    /* font-weight: 800; */
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, grey, white);
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    /* border-bottom: black solid 1px; */
+}
+
+.logo {
+    width: 25%;
+    border: solid gray;
+    /* border-radius: 10px;; */
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.favicon {
+    margin: 20px 25px;
+}
+
+.navigation-list__item {
+    margin: 65px 170px 0px 50px;
+    display:flex;
+    font-size: larger;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 30px;
-}
-
-.middle-section {
-    display:inline-flex;
-    justify-content: space-evenly;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 15px;
     
 }
 
-.about-me {
-    font-size: x-large;
+a {
+    color: #0069b9;
 }
 
-.social-icon {
-    width: 4rem;
+a:visited {
+    color: #502846;
 }
 
-#headshot {
-    width: 18rem;
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    /* selected link */
+    color: #004579;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.profile-description {
+    background-color: black;
+    color: darkgoldenrod;
+    padding: 0 2px 2px 2px;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #0069b9;
+    color: white;
+    text-decoration: none;
+    /* adds spacing to the button (this will be discussed more in-depth later */
+    padding: 10px;
+    /* creates rounded corners on the button */
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 150, 0.9);
+}
+
+button:hover,
+button:focus {
+    /*lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 80%;
+}
+
+.required-fields {
+    font-style: italic;
+    font-weight: 100;
+    color: #990000;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 100px;
     border-radius: 50%;
+    border: solid gray;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.projects {
+    text-align: center;
+}
+
+.project-item {
+    border: solid gray;
+}
+.page-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    margin: 10px 0px 0px 10px;
+}
+
+.social-links:hover,
+.social-links:focus {
+    cursor: pointer;
+    opacity: 80%;
 }

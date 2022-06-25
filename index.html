@@ -1,54 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Mono&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
   <script defer src="./app.js"></script>
-  <title>amartinez-portfolio</title>
+  <title>Portfolio</title>
 </head>
 
 <body>
+  <header class="header">
+    <!-- Logo -->
+    <img class="logo" src="img/logo-header.png" alt="My personal logo">
+    <nav>
+      <ul role="menubar" class="navigation-list">
+        <li class="nav-list" role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li class="nav-list" role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li class="nav-list" role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li class="nav-list" role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <header>
-      <h1>Adam Martinez</h1>
-      <h2>Thank you for visiting my personal portfolio!</h2>
-    </header>
-    <section class="middle-section">
-      <div>
-        <a href="docs/Adam Martinez 2022 Resume.pdf" target="_blank"><img src="/img/resume-icon.png" alt="Resume thumbnail" />Resume</a>
-      </div>
-      <div>
-        <img id="headshot" src="img/headshot.jpeg" alt="Headshot of Adam Martinez" />
-      </div>
-      <div>
-        <p>
-          <span class="about-me">About Me</span><br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-          aliquam repudiandae sit possimus fugiat repellat rem corporis
-          reiciendis, ab aspernatur inventore suscipit maiores pariatur. Eligendi
-          rem quod dolore rerum eius magni? Nemo placeat, adipisci vero explicabo
-          iure vel praesentium. Corporis voluptates exercitationem minus expedita
-          vel quo, voluptas non asperiores impedit.
-        </p>
-      </div>
-    </div>
-    <section id="projects">
-      <h3>Projects</h3>
-      <a href="#"><img src="https://via.placeholder.com/200" alt="Project1" /></a>
-      <a href="#"><img src="https://via.placeholder.com/200" alt="Project2" /></a>
-      <a href="#"><img src="https://via.placeholder.com/200" alt="Project3" /></a>
-      <a href="#"><img src="https://via.placeholder.com/200" alt="Project4" /></a>
+    <section class="profile">
+      <!-- Portrait image -->
+      <img class="profile__portrait" src="img/headshot.jpeg" width="150" height="150" alt="Adam Martine Portrait">
+      <h1 id="index">Hello World!</h1>
+      <p>
+        My name is Adam Martinez. I am a <span class="profile-description"><\web></span> developer from the United States.
+      </p>
+      <p>Check out some of <a href="https://github.com" target="_blank">my code</a>.</p>
+    </section>
+    <section class="projects">
+      <img class="project-item" src="img/RPS.png" width="230" height="200" alt="Rock Paper Scissors">
+      <img class="project-item" src="https://placeholder.pics/svg/200" alt="">
+      <img class="project-item" src="https://placeholder.pics/svg/200" alt="">
+      <img class="project-item" src="https://placeholder.pics/svg/200" alt="">
     </section>
   </main>
-  <footer>
-    <a href="#"><img src="img/github.png" alt="GitHub Logo" class="github-icon social-icon" /></a>
-    <a href="https://linkedin.com/in/adam-martinez" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo" class="linkedin-icon social-icon" /></a>
+
+  <footer class="page-footer">
+    <h2>Find me on</h2>
+    <!-- GitHub image/link -->
+    <a class="social-links" href="https://github.com/time2fishman" target="_blank"><img src="img/GitHubLogo.svg" alt="GitHub"></a>
+    <!-- LinkedIn image/link -->
+    <a class="social-links" href="https://www.linkedin.com/in/adam-martinez" target="_blank"><img src="img/LinkedInLogo.svg" alt="LinkedIn"></a>
   </footer>
+
 </body>
 
 </html>
