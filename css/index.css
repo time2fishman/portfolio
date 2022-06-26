@@ -1,0 +1,106 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, grey, white);
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo {
+    width: 25%;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.navigation-list__item {
+    margin: 65px 170px 0px 50px;
+    display:flex;
+    font-size: larger;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 15px;
+    
+}
+
+a {
+    color: #0272b3;
+}
+
+a:visited {
+    /* color: #502846; */
+}
+
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    /* selected link */
+    color: #004579;
+}
+
+.profile-description {
+    background-color: black;
+    color: darkgoldenrod;
+    padding: 0 2px 2px 2px;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 100px;
+    border-radius: 50%;
+    border: solid gray;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.projects {
+    text-align: center;
+}
+
+.project-item {
+    border: solid gray;
+    width: 200px;
+    height: 200px;
+}
+.page-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    margin: 10px 0px 0px 10px;
+}
+
+.social-links:hover,
+.social-links:focus {
+    cursor: pointer;
+    opacity: 80%;
+}
