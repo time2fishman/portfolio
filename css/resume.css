@@ -35,7 +35,7 @@ a {
 }
 
 a:visited {
-    /* color: #502846; */
+    color: #502846;
 }
 
 a:hover,
@@ -68,7 +68,7 @@ div {
 }
 
 .page-footer {
-    position: relative;
+    position: bottom;
     bottom: 20px;
     width: 100%;
     text-align: center;

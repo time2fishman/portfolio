@@ -37,13 +37,10 @@ main {
 
 h1 {
     font-size: 35px;
-    margin-left: 15px;
 }
 
 h2 {
     font-size: 24px;
-    margin-left: 15px;
-    
 }
 
 a {
@@ -51,7 +48,7 @@ a {
 }
 
 a:visited {
-    /* color: #502846; */
+    color: #502846;
 }
 
 a:hover,
@@ -71,7 +68,7 @@ a:active {
 }
 
 .page-footer {
-    position: absolute;
+    position: bottom;
     bottom: 20px;
     width: 100%;
     text-align: center;
@@ -85,4 +82,8 @@ a:active {
 .social-links:focus {
     cursor: pointer;
     opacity: 80%;
+}
+
+@media (min-width: 400px) {
+
 }
