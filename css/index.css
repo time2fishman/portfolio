@@ -33,6 +33,7 @@ main {
 
 .logo {
     width: 25%;
+    transition: transform 0.9s ease-in;
 }
 
 .navigation-list {
