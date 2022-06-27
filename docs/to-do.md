@@ -1,8 +1,8 @@
 1. ~~Fix footer bug~~
 1. ~~Fix bug with phone number link~~
 1. ~~Align headings on AboutMe page~~
-1. JS 3 points of interaction
-1. Implement responsive design
+1. JS 3 points of interaction ( 2 of 3 completed)
+1. ~~Implement responsive design~~
 1. Comment code
 1. User Stories
 1. ReadMe.md

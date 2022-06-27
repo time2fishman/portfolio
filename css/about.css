@@ -1,8 +1,18 @@
+/* Colors used:
+Body
+    - gray to white (linear gradient)
+Links
+    - #0272b3 (blue)
+    - #502846 (purple)
+    - gray
+*/
+
 body {
     font-family: 'Source Code Pro', monospace;
     font-size: 18px;
     line-height: 1.6;
-    background-image: linear-gradient(to right, grey, white);
+    /* Fade body color from left to right */
+    background-image: linear-gradient(to right, gray, white);
 }
 
 main {
@@ -12,7 +22,7 @@ main {
 
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .logo {
@@ -27,11 +37,12 @@ main {
 
 .navigation-list__item {
     margin: 65px 170px 0px 50px;
-    display:flex;
+    display: flex;
     font-size: larger;
 }
 
 .navigation-list__item--active {
+    /* No underlining on active page */
     text-decoration: none;
 }
 
@@ -48,6 +59,7 @@ a {
 }
 
 a:visited {
+    /* Previously clicked */
     color: #502846;
 }
 
@@ -58,11 +70,12 @@ a:focus {
 }
 
 a:active {
-    /* selected link */
-    color: #004579;
+    /* Selected link */
+    color: gray;
 }
 
-.contact-link{
+.contact-link {
+    /* No underlining when on the About page */
     text-decoration: none;
 
 }
@@ -84,6 +97,8 @@ a:active {
     opacity: 80%;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 675px) and (max-width: 1000px) {
     body {
         font-size: 16px;
@@ -104,7 +119,7 @@ a:active {
 
     .navigation-list__item {
         margin: 65px 60px 0px 30px;
-        display:flex;
+        display: flex;
         font-size: larger;
     }
 }
@@ -113,7 +128,7 @@ a:active {
     body {
         font-size: 16px;
     }
-    
+
     h1 {
         font-size: 25px;
     }
