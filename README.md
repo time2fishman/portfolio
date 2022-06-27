@@ -1,17 +1,29 @@
 # Portfolio
 
-The purpose of this site is to learn about Adam Martinez and his programming skills.
+_The purpose of this site is to learn about Adam Martinez and his programming skills._
+
+### Initial Wireframes
+![Initial Wire Frames](/img/portfolio-wireframes.jpg)
+
+### Current Iteration
+![Sceen Shot of home page](/img/homepage-screenshot.png)
+
+## User Stories
+
+* As a friend or family member of the author, I want to easily hit the URL and be able to see what kind of progress my peer has made in their skills.
+* As an instructor, I want to see that the student has met the MVP requirements.
+* As a potential employer, I want to see that the author has the skills to bring value to my company. Both through code, documentation, and presentation.
 
 ## Description
 
-This project is a requirement of the **Generel Assembly Full Stack Software Engineering** bootcamp.It consists of 3 pages.
+This project is a requirement of the **Generel Assembly Full Stack Software Engineering** bootcamp. It consists of 3 pages.
 * Home
   * Logo
   * Nav bar
   * Profile pic
   * Short bio
   * Past projects
-  * Links to social sites 
+  * Links to social sites
 * About
   * Logo
   * Nav bar
@@ -32,6 +44,11 @@ The logo will also spin 360 degrees when double clicked.  </br>
 When the users clicks on the projects, they are are taken to that specific GitHub repo in a new tab. Any projects that say "Coming Soon" are dead linked and lead nowhere.
 
 ## Getting Started
+
+### Technologies
+1. HTML
+1. CSS
+1. JavaScript
 
 ### Dependencies
 
