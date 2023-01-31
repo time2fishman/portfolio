@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_The purpose of this site is to learn about Adam Martinez and his programming skills._
 
-## Available Scripts
+### Initial Wireframes
+![Initial Wire Frames](/img/portfolio-wireframes.jpg)
 
-In the project directory, you can run:
+### Current Iteration
+![Sceen Shot of home page](/img/homepage-screenshot.png)
 
-### `npm start`
+## User Stories
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* As a friend or family member of the author, I want to easily hit the URL and be able to see what kind of progress my peer has made in their skills.
+* As an instructor, I want to see that the student has met the MVP requirements.
+* As a potential employer, I want to see that the author has the skills to bring value to my company. Both through code, documentation, and presentation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
 
-### `npm test`
+This project is a requirement of the **Generel Assembly Full Stack Software Engineering** bootcamp. It consists of 3 pages.
+* Home
+  * Logo
+  * Nav bar
+  * Profile pic
+  * Short bio
+  * Past projects
+  * Links to social sites
+* About
+  * Logo
+  * Nav bar
+  * About Me section
+  * Contact Me section
+  * Links to social sites
+* Resume
+  * Logo
+  * Nav bar
+  * Link to view, download, or pringt resume in Google Docs
+  * Screenshot of resume
+  * Links to social sites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There is a hidden Easter egg button on the home page that will become visble when you hover over it. When clicked, the user get an alert congratulating them on finding the egg. </br>
 
-### `npm run build`
+The logo will also spin 360 degrees when double clicked.  </br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When the users clicks on the projects, they are are taken to that specific GitHub repo in a new tab. Any projects that say "Coming Soon" are dead linked and lead nowhere.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies
+1. HTML
+1. CSS
+1. JavaScript
 
-### `npm run eject`
+### Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* This project was solely tested on the Google Chrome browser. 
+* It should work with any OS.
+* You may need a GitHub account to browse the repositories.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* To download and edit the project, you will need to fork and clone it locally to your machine. This project is a public project so please make your own branches from the **main** branch and create a pull request if you would like to contribute.
+* To view the site while running, click the URL
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Help
 
-## Learn More
+Create an issue, or message the author directly for assistance (see **Authors** below). 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Adam Martinez * Jun 2022
 
-### Code Splitting
+Phone: You wish!</br>
+Email: abc@domain.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Version History
 
-### Analyzing the Bundle Size
+* 1.0.0
+    * Initial Release
+* 1.0.1
+    * Fix images
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+Not licensed at this time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+I would like to thank Alex Beers, Jay Thurber, and my fellow classmates for helping me out on this project.</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ReadMe Templates inspired by:
+* [awesome*readme](https://github.com/matiassingers/awesome*readme)
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [dbader](https://github.com/dbader/readme*template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
