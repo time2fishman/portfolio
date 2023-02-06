@@ -6,14 +6,33 @@ import spaceBattle from './img/space-battle.png'
 import comingSoon from './img/coming-soon.svg'
 import githubLogo from './img/github-logo.svg'
 import linkedinLogo from './img/linkedin-logo.svg'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
-  // State
+  // STATE
   const [spin, setSpin] = useState(false)
+  const [position, setPosition] = useState({
+    left: 0,
+    top: 0
+  });
 
+  // USEEFFECT
+
+  // Runs randomButtonPosition() function once on page load
+  useEffect(() => {
+    randomButtonPosition()
+  }, [])
 
   // FUNCTIONS
+
+  // Randomly assign postion state data numbers so they can be set as 
+  // left and top styles on easterEgg button below.
+  const randomButtonPosition = () => {
+    setPosition({
+      left: Math.floor(Math.random() * 500 + 1),
+      top: Math.floor(Math.random() * 500 + 1)
+    });
+  }
 
   // Spins logo 360 degrees when double clicked
   const spinLogo = () => {
@@ -21,29 +40,23 @@ function App() {
     setTimeout(() => setSpin(false), 3000)
   }
 
-  // // Randomly places hidden easter egg button on home screen each time page loads
-  // const setButtonLocation = () => {
-  //     let left = Math.floor(Math.random() * 500) + 1;
-  //     let top = Math.floor(Math.random() * 500) + 1;
-  //     easterEggButton.style.left = left + "px";
-  //     easterEggButton.style.top = top + "px";
-  // }
-
-  // // Runs the setButtonLocation function automatically after the page loads.
-  // window.onload = setButtonLocation
-
-  // const foundEasterEgg = () => {
-  //     alert("Congratulations! You found my easter egg!!!")
-  // }
-
-  // // EVENT LISTENERS
-
-  // easterEggButton.addEventListener('click', foundEasterEgg)
-  // logoButton.addEventListener('dblclick', spinLogo)
+  // Alert pops up with message when easter egg button is clicked
+  const foundEasterEgg = () => {
+    alert("Congratulations! You found my easter egg!!!")
+  }
 
   return (
     <>
-      <button className="easter-egg" type="button">Click Me!</button>
+      <button
+        className='easter-egg'
+        onClick={foundEasterEgg}
+        style={{
+          left: position.left,
+          top: position.top
+        }}
+      >
+        Click Me!
+      </button>
 
       <header className="header">
         {/* Logo */}

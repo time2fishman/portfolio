@@ -147,7 +147,6 @@ a:active {
 }
 
 .easter-egg {
-  /* visibility: hidden; */
   opacity: 0;
   position: absolute;
 }
