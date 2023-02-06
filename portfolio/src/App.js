@@ -37,7 +37,7 @@ function App() {
   // Spins logo 360 degrees when double clicked
   const spinLogo = () => {
     setSpin(true)
-    setTimeout(() => setSpin(false), 3000)
+    setTimeout(() => setSpin(false), 1000)
   }
 
   // Alert pops up with message when easter egg button is clicked
