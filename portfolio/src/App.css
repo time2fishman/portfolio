@@ -15,7 +15,7 @@ Project borders
 */
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 18px;
   line-height: 1.6;
   /* Fade body color from left to right */
@@ -32,10 +32,24 @@ main {
 }
 
 .logo {
-  width: 25%;
+  width: 20%;
   transition: transform 0.9s ease-in;
   margin-left: 25px;
   margin-top: 25px;
+}
+
+.spin {
+  animation: spin 1s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .navigation-list {
@@ -62,7 +76,6 @@ h1 {
 h2 {
   font-size: 24px;
   margin-left: 15px;
-
 }
 
 a {
@@ -148,94 +161,94 @@ a:active {
 
 @media (min-width: 875px) and (max-width: 1000px) {
   h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .logo {
-      width: 30%;
+    width: 30%;
   }
 
   .navigation-list__item {
-      margin: 65px 100px 0px 0px;
-      display: flex;
-      font-size: larger;
+    margin: 65px 100px 0px 0px;
+    display: flex;
+    font-size: larger;
   }
 
   .profile__portrait {
-      float: left;
-      width: 220px;
-      height: auto;
-      margin-right: 50px;
+    float: left;
+    width: 220px;
+    height: auto;
+    margin-right: 50px;
   }
 }
 
 @media (min-width: 650px) and (max-width: 874px) {
   body {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .logo {
-      width: 30%
+    width: 30%;
   }
 
   .navigation-list__item {
-      margin: 55px 80px 0px 0px;
-      display: flex;
-      font-size: 20px;
+    margin: 55px 80px 0px 0px;
+    display: flex;
+    font-size: 20px;
   }
 
   .profile__portrait {
-      float: left;
-      width: 200px;
-      height: auto;
-      margin-right: 50px;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
   }
 }
 
 @media (max-width: 649px) {
   h1 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .header {
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
 
   .logo {
-      width: 80%
+    width: 80%;
   }
 
   .navigation-list {
-      display: flex;
-      justify-content: center
+    display: flex;
+    justify-content: center;
   }
 
   .navigation-list__item {
-      margin: 0px;
-      padding: 20px;
-      font-size: 18px;
-      text-align: center;
+    margin: 0px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
   }
 
   .profile {
-      display: block;
-      text-align: center;
-      margin-bottom: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: auto;
   }
 
   .profile__portrait {
-      float: none;
-      width: 175px;
-      height: auto;
-      margin-right: 50px;
+    float: none;
+    width: 175px;
+    height: auto;
+    margin-right: 50px;
   }
 }

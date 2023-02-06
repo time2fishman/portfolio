@@ -1,49 +1,45 @@
 import './App.css'
-import logo from'./img/adam-logo.svg'
+import logo from './img/adam-logo.svg'
 import headshot from './img/headshot.jpeg'
 import rockPaperScissors from './img/lapisPapyrusScapellus.png'
 import spaceBattle from './img/space-battle.png'
 import comingSoon from './img/coming-soon.svg'
 import githubLogo from './img/github-logo.svg'
 import linkedinLogo from './img/linkedin-logo.svg'
+import { useState } from 'react'
 
 function App() {
-//   // GLOBAL VARIABLES
+  // State
+  const [spin, setSpin] = useState(false)
 
-// let current_rotation = 0
 
-// // SELECT ELEMENTS
+  // FUNCTIONS
 
-// const easterEggButton = document.querySelector('.easter-egg')
-// const logoButton = document.querySelector('.logo')
+  // Spins logo 360 degrees when double clicked
+  const spinLogo = () => {
+    setSpin(true)
+    setTimeout(() => setSpin(false), 3000)
+  }
 
-// // FUNCTIONS
+  // // Randomly places hidden easter egg button on home screen each time page loads
+  // const setButtonLocation = () => {
+  //     let left = Math.floor(Math.random() * 500) + 1;
+  //     let top = Math.floor(Math.random() * 500) + 1;
+  //     easterEggButton.style.left = left + "px";
+  //     easterEggButton.style.top = top + "px";
+  // }
 
-// // Spins logo 360 degrees when double clicked
-// const spinLogo = () => {
-//     current_rotation += 360
-//     logoButton.style.transform = 'rotate(' + current_rotation + 'deg)'
-// }
+  // // Runs the setButtonLocation function automatically after the page loads.
+  // window.onload = setButtonLocation
 
-// // Randomly places hidden easter egg button on home screen each time page loads
-// const setButtonLocation = () => {
-//     let left = Math.floor(Math.random() * 500) + 1;
-//     let top = Math.floor(Math.random() * 500) + 1;
-//     easterEggButton.style.left = left + "px";
-//     easterEggButton.style.top = top + "px";
-// }
+  // const foundEasterEgg = () => {
+  //     alert("Congratulations! You found my easter egg!!!")
+  // }
 
-// // Runs the setButtonLocation function automatically after the page loads.
-// window.onload = setButtonLocation
+  // // EVENT LISTENERS
 
-// const foundEasterEgg = () => {
-//     alert("Congratulations! You found my easter egg!!!")
-// }
-
-// // EVENT LISTENERS
-
-// easterEggButton.addEventListener('click', foundEasterEgg)
-// logoButton.addEventListener('dblclick', spinLogo)
+  // easterEggButton.addEventListener('click', foundEasterEgg)
+  // logoButton.addEventListener('dblclick', spinLogo)
 
   return (
     <>
@@ -51,7 +47,7 @@ function App() {
 
       <header className="header">
         {/* Logo */}
-        <img className="logo" src={logo} alt="My personal logo" />
+        <img className={`logo ${spin ? 'spin' : null}`} src={logo} onDoubleClick={spinLogo} alt="My personal logo" />
         <nav>
           <ul role="menubar" className="navigation-list">
             <li className="nav-list" role="presentation">
