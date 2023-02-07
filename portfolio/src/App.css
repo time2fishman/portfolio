@@ -26,49 +26,6 @@ main {
   margin-top: -50px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 20%;
-  transition: transform 0.9s ease-in;
-  margin-left: 25px;
-  margin-top: 25px;
-}
-
-.spin {
-  animation: spin 1s;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.navigation-list {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-}
-
-.navigation-list__item {
-  margin: 65px 100px 0px 50px;
-  display: flex;
-  font-size: x-large;
-}
-
-.navigation-list__item--active {
-  /* No underlining on active page */
-  text-decoration: none;
-}
-
 h1 {
   font-size: 35px;
 }
@@ -129,22 +86,7 @@ a:active {
   height: 200px;
 }
 
-.page-footer {
-  position: bottom;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-}
 
-.social-links {
-  margin: 10px 0px 0px 10px;
-}
-
-.social-links:hover,
-.social-links:focus {
-  cursor: pointer;
-  opacity: 80%;
-}
 
 .easter-egg {
   opacity: 0;

@@ -1,0 +1,16 @@
+.page-footer {
+  position: bottom;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-links {
+  margin: 10px 0px 0px 10px;
+}
+
+.social-links:hover,
+.social-links:focus {
+  cursor: pointer;
+  opacity: 80%;
+}
