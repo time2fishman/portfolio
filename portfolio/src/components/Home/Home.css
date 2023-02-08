@@ -8,7 +8,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin-left: 15px;
+  padding: 1em;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
 }
 
 .profile-description {
@@ -31,8 +36,14 @@ h2 {
   margin: 100px auto;
 }
 
+.projects-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .projects {
-  padding: 1em;
+  padding: .5em;
   text-align: center;
 }
 
@@ -109,9 +120,5 @@ h2 {
     height: auto;
     margin-right: auto;
     margin-top: -70px;
-  }
-
-  .projects {
-    margin-bottom: -30px;
   }
 }
