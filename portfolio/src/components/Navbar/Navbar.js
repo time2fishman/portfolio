@@ -1,23 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../../img/adam-logo.svg'
-import { Link } from 'react-router-dom';
+// IMPORT CSS
 import './Navbar.css'
+// IMPORT HOOKS
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+// IMPORT IMGS
+import logo from '../../img/adam-logo.svg'
 
 const Navbar = () => {
   // STATE
   const [spin, setSpin] = useState(false)
-  // const [position, setPosition] = useState({
-  //   left: 0,
-  //   top: 0
-  // });
-
+  //FUNCTIONS
   const spinLogo = () => {
     setSpin(true)
     setTimeout(() => setSpin(false), 1000)
   }
 
   return (
-    <div>
       <header className="header">
         {/* Logo */}
         <img className={`logo ${spin ? 'spin' : null}`} src={logo} onDoubleClick={spinLogo} alt="My personal logo" />
@@ -25,7 +23,7 @@ const Navbar = () => {
           <ul role="menubar" className="navigation-list">
             <li className="nav-list" role="presentation">
               {/* Home page link */}
-              <Link to="/home" role="menuitem" className="navigation-list__item navigation-list__item--active">Home</Link>
+              <Link to="/home" role="menuitem" className="navigation-list__item">Home</Link>
             </li>
             <li className="nav-list" role="presentation">
               {/* About page link */}
@@ -38,8 +36,8 @@ const Navbar = () => {
           </ul>
         </nav>
       </header>
-    </div>
   );
+  
 };
 
 export default Navbar;

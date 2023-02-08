@@ -1,7 +1,8 @@
-import React from 'react';
+// IMPORT CSS
 import './About.css'
 
 const About = () => {
+
   return (
     <main>
       <h1 id="about">About Me</h1>
@@ -32,6 +33,7 @@ const About = () => {
       </div>
     </main>
   );
+
 };
 
 export default About;
