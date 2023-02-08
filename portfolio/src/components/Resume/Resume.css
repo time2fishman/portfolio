@@ -1,0 +1,28 @@
+.resume-img {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 875px) and (max-width: 1000px) {
+  .resume-img {
+    width: 70%
+  }
+}
+
+@media (min-width: 650px) and (max-width: 874px) {
+  .resume-img {
+    width: 80%
+  }
+}
+
+@media (max-width: 649px) {
+  .resume-img {
+    width: 90%
+  }
+}

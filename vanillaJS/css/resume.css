@@ -65,14 +65,10 @@ div {
     padding: 2em;
 }
 
-.download-resume {
-    text-decoration: none;
-}
-
 .resume-img {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -103,7 +99,7 @@ div {
         margin-right: 30px;
     }
 
-    h1 {
+    h2 {
         font-size: 25px;
     }
 
@@ -123,7 +119,7 @@ div {
         font-size: 16px;
     }
 
-    h1 {
+    h2 {
         font-size: 20px;
     }
 

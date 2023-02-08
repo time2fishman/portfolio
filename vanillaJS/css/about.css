@@ -74,12 +74,6 @@ a:active {
     color: gray;
 }
 
-.contact-link {
-    /* No underlining when on the About page */
-    text-decoration: none;
-
-}
-
 .page-footer {
     position: bottom;
     bottom: 20px;

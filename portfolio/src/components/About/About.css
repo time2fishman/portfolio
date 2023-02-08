@@ -1,0 +1,40 @@
+main {
+  margin: 30px;
+}
+
+#about {
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 875px) and (max-width: 1000px) {
+  main {
+    font-size: 17px;
+  }
+
+  #about {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 874px) {
+  main {
+    font-size: 16px;
+  }
+
+  #about {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 649px) {
+  main {
+    font-size: 15px;
+  }
+
+  #about {
+    font-size: 25px;
+  }
+}
