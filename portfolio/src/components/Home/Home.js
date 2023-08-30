@@ -57,9 +57,10 @@ const Home = () => {
           </span> developer from the United States.
         </p>
       </section>
-        <h2>Check out some of my projects below</h2>
+        <h2>Check out my most recent project below</h2>
       <section className='projects-section'>
         <div className="projects">
+          <h3>Curtis' Martial Arts</h3>
           {/* Link/Img to project */}
           <a href="https://time2fishman.github.io/curtisMartialArts/" target="_blank" rel="noreferrer"><img className="project-item"
             src={homePage} alt="Curtis' Martial Arts" /></a>

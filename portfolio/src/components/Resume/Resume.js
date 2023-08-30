@@ -1,7 +1,7 @@
 // IMPORT CSS
 import './Resume.css'
 // IMPORT IMAGES
-import resumePic from '../../img/adamMartinezResume (1).pdf'
+import resumePic from '../../img/adamMartinezResume.jpg'
 
 const Resume = () => {
 
