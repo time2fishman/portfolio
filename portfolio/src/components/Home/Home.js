@@ -4,11 +4,7 @@ import './Home.css'
 import React, { useState, useEffect } from 'react';
 // IMPORT IMGS
 import headshot from '../../img/headshot.jpeg'
-import mainLogo from '../../img/mainLogo.svg'
-import monstersRolodex from '../../img/monstersRolodex.png'
-import beInspired from '../../img/BeInspired_ScreenShot.png'
-import triviaTime from '../../img/triviaTime.png'
-import weather from '../../img/weather.png'
+import homePage from '../../img/homepage-screenshot.png'
 
 const Home = () => {
   // STATE
@@ -66,7 +62,7 @@ const Home = () => {
         <div className="projects">
           {/* Link/Img to project */}
           <a href="https://time2fishman.github.io/curtisMartialArts/" target="_blank" rel="noreferrer"><img className="project-item"
-            src={mainLogo} alt="Curtis' Martial Arts" /></a>
+            src={homePage} alt="Curtis' Martial Arts" /></a>
         </div>
       </section>
     </main>
