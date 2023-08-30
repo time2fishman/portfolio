@@ -24,7 +24,7 @@ h4 {
 
 .profile__portrait {
   float: left;
-  width: 350px;
+  width: 250px;
   height: auto;
   margin-right: 100px;
   border-radius: 50%;
@@ -49,8 +49,8 @@ h4 {
 
 .project-item {
   border: solid gray;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: auto;
 }
 
 .easter-egg {
