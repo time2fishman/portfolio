@@ -4,7 +4,7 @@ import './Home.css'
 import React, { useState, useEffect } from 'react';
 // IMPORT IMGS
 import headshot from '../../img/headshot.jpeg'
-import homePage from '../../img/homepage-screenshot.png'
+import homePage from '../../img/CurtisMartialArts.png'
 
 const Home = () => {
   // STATE
